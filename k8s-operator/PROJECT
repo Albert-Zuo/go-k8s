@@ -1,0 +1,16 @@
+domain: github.com
+layout:
+- go.kubebuilder.io/v3
+projectName: k8s-operator
+repo: github.com/Albert-Zuo/go-k8s/kubebuilder
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: github.com
+  group: apps
+  kind: Application
+  path: github.com/Albert-Zuo/go-k8s/kubebuilder/api/v1
+  version: v1
+version: "3"
