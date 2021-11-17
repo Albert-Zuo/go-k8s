@@ -41,11 +41,11 @@
 [root@localhost ~]# cd go-k8s/app
 [root@localhost app]# docker build -t monitor:v1.0.0 .
 [root@localhost app]# docker images
-REPOSITORY           TAG           IMAGE ID       CREATED         SIZE
-albertzuo/monitor    v1.0.0        135decd1bd5f   23 hours ago    304MB
-golang               1.16-alpine   1b35785aa3c4   2 weeks ago     302MB
+REPOSITORY                 TAG           IMAGE ID       CREATED         SIZE
+monitor                    v1.0.0        6548900d31bf   8 seconds ago   7.57MB
+<none>                     <none>        2ef83f796d3e   9 seconds ago   304MB
 ```
-
+使用Docker多阶段构建镜像，可以将Docker镜像大小缩小
 
 
 2、push 镜像仓库（hub.docker 公有仓库为例）
